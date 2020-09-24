@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#animation{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+}
+svg{
+    margin: auto;
+}
+@keyframes revolvecl{
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+}
+@keyframes revolveacl{
+    0%{transform: rotateZ(360deg);}
+    100%{transform: rotateZ(0deg);}
+}
+#plant{
+    animation: wind 3s linear infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes wind{
+    0%{
+        transform:rotateX(0deg);
+    }
+    50%{
+        transform:rotateX(20deg);
+    }
+    100%{
+        transform:rotateX(0deg);
+    }
+}
+#circle1{
+    animation: revolvecl 3s linear infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#circle2{
+    animation: revolvecl 3s linear infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#circle3{
+    animation: revolvecl 3s linear infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
